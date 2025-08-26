@@ -1,0 +1,1 @@
+console.log("Teste de console com ctrl+alt+n")
