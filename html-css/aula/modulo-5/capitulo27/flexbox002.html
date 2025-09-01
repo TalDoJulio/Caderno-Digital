@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direções e Eixos</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            background-color: black;
+        }
+        header {
+            background-color: white;
+        }
+        div#container {
+
+            background-color: white;
+
+
+
+            display: flex;
+            flex-direction: column;
+        }
+        div.item {
+            background-color: chocolate;
+            text-align: center;
+            border: 1px solid rgb(255, 0, 0);
+
+
+
+            flex: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Flexible Box Module</h1>
+        <p>Na aula anterios nos falamos sobre o container(pai), o <q>pai</q> é quem leva a configuração <q>display: flex;</q>, temos que destacar quem é o container pai, pois é ele que vai conter todos os itens</p>
+    </header>
+    <div id="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+    </div>
+    <p>Agora iremos falar sobre <strong>Direções / Eixos</strong></p>
+    <p>Vamos comecar com a configuração de direção, essa configuração é usada somente no container / pai, e existe 4 valores para essa configuração, sendo elas, flex-direction: row;row-reverse; column; column-reverse;</p>
+    <p>Quando escolhemos a direção, sao criador 2 coisas importantes. Os Eixos: main-axis:main-start:main-end; cross-axis:cross-start:cross-end;</p>
+
+
+    
+
+</body>
+</html>

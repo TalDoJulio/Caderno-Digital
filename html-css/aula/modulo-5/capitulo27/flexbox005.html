@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização absoluta com flexbox</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: lightsalmon;
+        }
+        .container {
+            background-color: brown;
+            margin: 0px auto;
+            height: 500px;
+            width: 500px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .item {
+            background-color: white;
+            border: 1px solid black;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <section class="item">A</section>
+        <section class="item">B</section>
+        <section class="item">C</section>
+        <section class="item">D</section>
+    </main>
+</body>
+</html>

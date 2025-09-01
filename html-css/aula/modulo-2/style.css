@@ -1,0 +1,72 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Android';
+    src: url('fontes/idroid.otf');
+}
+/* 
+    954px para altura
+    516×1047 altu. e largu. minima
+    proporção da tela
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap'); /* Fonte 'Roboto Mono' do google fonts*/
+:root {
+    --verde-fraco: #90EE90;
+    --verde-fraco-secundaria: #03FF00;
+    --verde-forte: #195a37;
+    --verde-forte-secundaria: #18AD17;
+    --cor-fundo: #645e8038;
+    --cor-letra: #843A00;
+    --degrade-roxo: #5F3DFF;
+    --degrade-claro: #FFE5D1;
+}
+.roboto-mono {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+  }
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+
+
+
+header {
+    background-image: linear-gradient(to bottom, var(--degrade-claro), var(--degrade-roxo));
+}
+header > h1 {
+    padding-top: 16px;
+}
+nav {
+    background-color: #5F3DFF;
+}
+nav > a {
+    color: black;
+}
+
+
+
+
+main {
+    width: 90%;
+    background-color: white;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+}
+.item {
+    border: 1px solid black;
+}

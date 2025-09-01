@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade flex-basis</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: lightcoral;
+
+            display: flex;
+            flex-flow: row nowrap; /* Mude para nowrap e diminua a tela */
+        }
+        .item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 150px;
+        }
+        /*
+        O padrao de "flex-basis: auto;"
+            podemos usar o valor em pixels (px) tbm
+
+        */
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="item">A</div>
+        <div class="item">Outro conteudo</div>
+        <div class="item">C</div>
+        <div class="item">Conteudo um pouco maior</div>
+        <div class="item">E</div>
+        <div class="item">Conteudo maior ainda, que vai ocupar mais espaço</div>
+        <div class="item">G</div>
+    </main>
+</body>
+</html>

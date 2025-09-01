@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento de elementos empacotados no Flexbox</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: rgba(165, 42, 42, 0.842);
+        }
+        .container {
+            background-color: burlywood;
+            margin: 0px auto;
+            height: 350px;
+            width: 700px;
+
+
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center;
+            /*
+            O valor padrao do "align-content: stretch;" 
+            */
+            align-content: stretch;
+            /*
+            align-content:
+                stretch;
+                flex-start;
+                flex-end;
+                center;
+                space-between;
+                space-evenly;
+                space-around;
+            */
+        }
+        .item {
+            background-color: white;
+            border: 1px solid black;
+            font-size: 24px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <section class="item">
+            <h1>align-content:</h1>
+        </section>
+        <section class="item">
+            <p>align-content: alinha os itens no eixo transverssal mas quando estao empacotados</p>
+        </section>
+        <section class="item">
+            <p>So funciona caso o flex-wrap seja wrap ou wrap-reverse</p>
+        </section>
+    </main>
+</body>
+</html>

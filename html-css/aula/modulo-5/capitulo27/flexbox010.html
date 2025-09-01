@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle do tamanho de itens flexiveis</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+        .container {
+            background-color: bisque;
+            padding: 5px;
+            /* Diminuia a largura para entender melhor */
+            width: 550px;
+            border-radius: 8px;
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 5px;
+        }
+        .item {
+            background-color: aqua;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 10px;
+            /* Flex-shrink quer dizer que o item vai encolher tantas x (vezes) mais, comparado aos outros itens caso os valores sejam diferentes*/
+            flex-shrink: 1;
+            /* Ja o flex-grow quer dizer que o item vai aumentar tantas X (vezes) mais, comparado aos outros itens caso os valores dessas propriedades sejam diferentes */
+            flex-grow: 0;
+            flex-basis: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Controle do tamanhbo de itens flexiveis</h1>
+    <p>Propriedades que se aplicam aos Elementos filhos</p>
+    <h2>Pode encolher? Pode aumentar?</h2>
+    <h3>Pode encolher?</h3>
+    <h4>O padrao: "flex-shrink: 1;"</h4>
+    <h3>Pode aumentar?</h3>
+    <h4>O padrao: "flex-grow: 0;"</h4>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+</body>
+</html>

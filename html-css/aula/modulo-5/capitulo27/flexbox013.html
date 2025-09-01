@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A propriedade flex</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        .container {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        .item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+
+        }
+        #cxA {
+            flex: 0 1 auto; /* Valor padrao, tambem podemos usar o valor INITIAL*/
+        }
+        #cxB {
+            flex: 0 0 auto; /* Ele n ira crescer e nem diminuir, e o tamanho vai depender dos outros conteudos, NÃO È FLEXIVEL, podemos usar o valor NONE */
+        }
+        #cxC {
+            flex: 1 1 auto; /* O elemento ira crescer e diminuir a vontade, e o tamanho do conteudo vai depender dos outros conteudos, podemos usar o valor AUTO, é o maximo de flexibilidade que uma caixa pode ter */
+        }
+    </style>
+
+</head>
+<body>
+    <h1>A propriedade flex</h1>
+    <p>Na aula passada aprendemos a usar o <q>flex-basis</q>, <q>flex-grow</q> e <q>flex-shrink</q>. Existe um shorthand para essas propriedades</p>
+    <h2>Flex</h2>
+    <p>Seguindo na ordem de flex: grow shrink basis;</p>
+
+    <div class="container">
+        <div class="item" id="cxA">AA</div>
+        <div class="item" id="cxB">BB</div>
+        <div class="item" id="cxC">CC</div>
+    </div>
+</body>
+</html>

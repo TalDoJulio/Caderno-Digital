@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomia dos itens Flexbox</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+
+        }
+        /*
+        Todo elemento dentro de um container flexbox vai conter "order: 0;", se por acaso quiser mudar a ondem de exibição desses itens, voce aplica a propriedade "order" com valores diferentes.
+        O proprio CSS vai reodernar para que esses numeros ficam em ordem crescente.
+        */
+        #i1 {
+            order: 2;
+        }
+        #i2 {
+            order: -2;
+        }
+        #i3 {
+            order: -1;
+        }
+        #i4 {
+            order: 10;
+        }
+        #i5 {
+            order: 0;
+        }
+        #i6 {
+            order: 1;
+        }
+
+        /*
+        Temos tambem o "align-self: " que vai se comportar de acordo com o cross-axis
+            align-self:
+                auto;
+                flex-start;
+                flex-end;
+                center;
+                stretch;
+        */
+    </style>
+</head>
+<body>
+    <main class="container">
+        <section class="item" id="i1">
+            A
+        </section>
+
+
+        <section class="item" id="i2">
+            B
+        </section>
+
+
+        <section class="item" id="i3">
+            C
+        </section>
+        <section class="item" id="i4">
+            D
+        </section>
+
+
+        <section class="item" id="i5">
+            E
+        </section>
+
+
+        <section class="item" id="i6">
+            F
+        </section>
+    </main>
+</body>
+</html>
